@@ -1,0 +1,17 @@
+{
+  "domain": "samsung_ac_advanced",
+  "name": "Samsung AC Advanced",
+  "version": "1.0.0",
+  "config_flow": true,
+  "integration_type": "device",
+  "iot_class": "cloud_polling",
+  "documentation": "https://github.com/ov6566/samsung-ac-advanced",
+  "issue_tracker": "https://github.com/ov6566/samsung-ac-advanced/issues",
+  "codeowners": [
+    "@ov6566"
+  ],
+  "categories": [
+    "climate.heat_pumps_air_conditioning"
+  ],
+  "requirements": []
+}

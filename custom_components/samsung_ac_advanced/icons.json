@@ -1,0 +1,80 @@
+{
+  "entity": {
+    "select": {
+      "mode": {
+        "default": "mdi:hvac"
+      },
+      "optional_mode": {
+        "default": "mdi:auto-mode"
+      },
+      "fan_speed": {
+        "default": "mdi:fan"
+      },
+      "oscillation": {
+        "default": "mdi:arrow-oscillating"
+      },
+      "filter_alarm_threshold": {
+        "default": "mdi:progress-alert"
+      }
+    },
+    "switch": {
+      "auto_cleaning": {
+        "default": "mdi:tailwind"
+      },
+      "sound_effect": {
+        "default": "mdi:volume-high"
+      },
+      "debug_mode": {
+        "default": "mdi:bug-outline"
+      }
+    },
+    "sensor": {
+      "filter_status": {
+        "default": "mdi:progress-question"
+      },
+      "filter_usage": {
+        "default": "mdi:progress-check"
+      },
+      "filter_capacity": {
+        "default": "mdi:progress-clock"
+      },
+      "eco_status": {
+        "default": "mdi:leaf"
+      },
+      "eco_ambient_temperature_internal": {
+        "default": "mdi:home-thermometer-outline"
+      },
+      "eco_ambient_temperature_external": {
+        "default": "mdi:home-thermometer-outline"
+      },
+      "current_ac_target_temperature": {
+        "default": "mdi:thermometer"
+      }
+    },
+    "button": {
+      "display_lighting_on": {
+        "default": "mdi:led-on"
+      },
+      "display_lighting_off": {
+        "default": "mdi:led-variant-off"
+      },
+      "filter_reminder_reset": {
+        "default": "mdi:progress-close"
+      }
+    },
+    "number": {
+      "target_temperature": {
+        "default": "mdi:thermometer"
+      },
+      "eco_target_temperature": {
+        "default": "mdi:thermometer-check"
+      },
+      "eco_margin": {
+        "default": "mdi:thermometer-auto"
+      },
+      "frost_target_temperature": {
+        "default": "mdi:snowflake-thermometer"
+      }
+    }
+  }
+}

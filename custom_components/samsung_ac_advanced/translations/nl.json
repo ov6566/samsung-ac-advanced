@@ -1,0 +1,159 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Samsung-airconditioner verbinden",
+        "description": "Voer de SmartThings-apparaat-ID en het persoonlijke toegangstoken in.",
+        "data": {
+          "device_id": "Apparaat-ID",
+          "token": "Persoonlijk toegangstoken"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Deze airconditioner is al geconfigureerd."
+    }
+  },
+  "entity": {
+    "select": {
+      "mode": {
+        "name": "Modus",
+        "state": {
+          "auto": "Automatisch",
+          "cool": "Koelen",
+          "heat": "Verwarmen",
+          "dry": "Drogen",
+          "fan_only": "Ventileren",
+          "off": "Uit"
+        }
+      },
+      "optional_mode": {
+        "name": "Voorinstelling",
+        "state": {
+          "none": "Geen",
+          "sleep": "Slapen",
+          "boost": "Boost",
+          "quiet": "Stil",
+          "eco": "Eco",
+          "frost": "Vorstbewaking"
+        }
+      },
+      "fan_speed": {
+        "name": "Ventilatorsnelheid",
+        "state": {
+          "auto": "Automatisch",
+          "low": "Laag",
+          "medium": "Gemiddeld",
+          "high": "Hoog",
+          "turbo": "Turbo"
+        }
+      },
+      "oscillation": {
+        "name": "Oscillatie",
+        "state": {
+          "vertical": "Verticaal",
+          "both_directions": "Beide richtingen",
+          "none": "Uit"
+        }
+      },
+      "filter_alarm_threshold": {
+        "name": "Filterwaarschuwing",
+        "state": {
+          "hours_180": "180 uur",
+          "hours_300": "300 uur",
+          "hours_500": "500 uur",
+          "hours_700": "700 uur"
+        }
+      }
+    },
+    "switch": {
+      "auto_cleaning": {
+        "name": "Zelfreinigen"
+      },
+      "sound_effect": {
+        "name": "Geluidssignaal"
+      },
+      "debug_mode": {
+        "name": "Debugmodus"
+      }
+    },
+    "sensor": {
+      "filter_status": {
+        "name": "Filterstatus",
+        "state": {
+          "normal": "Normaal",
+          "needs_cleaning": "Reinigen nodig",
+          "wash": "Wassen",
+          "replace": "Vervangen"
+        }
+      },
+      "filter_usage": {
+        "name": "Filtergebruik"
+      },
+      "filter_capacity": {
+        "name": "Filtercapaciteit"
+      },
+      "eco_status": {
+        "name": "Eco-status",
+        "state": {
+          "disabled": "Uitgeschakeld",
+          "armed": "Vooringesteld",
+          "running": "Actief",
+          "running_internal": "Actief (interne sensor)",
+          "running_external": "Actief (externe sensor)",
+          "satisfied_off": "Slapen",
+          "suspended": "Onderbroken",
+          "satisfied_fan_quiet": "Stand-by",
+          "temperature_stale": "Temperatuur verouderd",
+          "temperature_unavailable": "Temperatuur niet beschikbaar",
+          "invalid_context": "Eco-context ongeldig"
+        }
+      },
+      "eco_ambient_temperature_internal": {
+        "name": "Omgevingstemperatuur (airco)"
+      },
+      "eco_ambient_temperature_external": {
+        "name": "Omgevingstemperatuur (sensor)"
+      },
+      "current_ac_target_temperature": {
+        "name": "Doeltemperatuur (airco)"
+      }
+    },
+    "button": {
+      "display_lighting_on": {
+        "name": "Displayverlichting aan"
+      },
+      "display_lighting_off": {
+        "name": "Displayverlichting uit"
+      },
+      "filter_reminder_reset": {
+        "name": "Filterwaarschuwing resetten"
+      }
+    },
+    "number": {
+      "target_temperature": {
+        "name": "Doeltemperatuur"
+      },
+      "eco_target_temperature": {
+        "name": "Eco doeltemperatuur"
+      },
+      "eco_margin": {
+        "name": "Eco marge"
+      },
+      "frost_target_temperature": {
+        "name": "Vorstbewaking doel"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Temperatuurregeling",
+        "description": "Kies optioneel een alternatieve kamertemperatuursensor voor Eco en Vorstbewaking. Laat leeg om de sensor van de airco te gebruiken.",
+        "data": {
+          "eco_temperature_sensor": "Alternatieve kamertemperatuursensor (Eco en Vorstbewaking)"
+        }
+      }
+    }
+  }
+}

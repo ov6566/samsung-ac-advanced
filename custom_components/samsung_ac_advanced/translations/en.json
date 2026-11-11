@@ -1,0 +1,159 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect Samsung air conditioner",
+        "description": "Enter the SmartThings device ID and personal access token.",
+        "data": {
+          "device_id": "Device ID",
+          "token": "Personal access token"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "This air conditioner is already configured."
+    }
+  },
+  "entity": {
+    "select": {
+      "mode": {
+        "name": "Mode",
+        "state": {
+          "auto": "Automatic",
+          "cool": "Cool",
+          "heat": "Heat",
+          "dry": "Dry",
+          "fan_only": "Fan only",
+          "off": "Off"
+        }
+      },
+      "optional_mode": {
+        "name": "Preset",
+        "state": {
+          "none": "None",
+          "sleep": "Sleep",
+          "boost": "Boost",
+          "quiet": "Quiet",
+          "eco": "Eco",
+          "frost": "Frost protection"
+        }
+      },
+      "fan_speed": {
+        "name": "Fan speed",
+        "state": {
+          "auto": "Automatic",
+          "low": "Low",
+          "medium": "Medium",
+          "high": "High",
+          "turbo": "Turbo"
+        }
+      },
+      "oscillation": {
+        "name": "Oscillation",
+        "state": {
+          "vertical": "Vertical",
+          "both_directions": "Both directions",
+          "none": "Off"
+        }
+      },
+      "filter_alarm_threshold": {
+        "name": "Filter warning",
+        "state": {
+          "hours_180": "180 hours",
+          "hours_300": "300 hours",
+          "hours_500": "500 hours",
+          "hours_700": "700 hours"
+        }
+      }
+    },
+    "switch": {
+      "auto_cleaning": {
+        "name": "Self-cleaning"
+      },
+      "sound_effect": {
+        "name": "Sound effect"
+      },
+      "debug_mode": {
+        "name": "Debug mode"
+      }
+    },
+    "sensor": {
+      "filter_status": {
+        "name": "Filter status",
+        "state": {
+          "normal": "Normal",
+          "needs_cleaning": "Needs cleaning",
+          "wash": "Wash",
+          "replace": "Replace"
+        }
+      },
+      "filter_usage": {
+        "name": "Filter usage"
+      },
+      "filter_capacity": {
+        "name": "Filter capacity"
+      },
+      "eco_status": {
+        "name": "Eco status",
+        "state": {
+          "disabled": "Disabled",
+          "armed": "Armed",
+          "running": "Active",
+          "satisfied_off": "Sleep",
+          "suspended": "Suspended",
+          "satisfied_fan_quiet": "Standby",
+          "temperature_stale": "Temperature stale",
+          "temperature_unavailable": "Temperature unavailable",
+          "invalid_context": "Invalid Eco context",
+          "running_internal": "Active (internal sensor)",
+          "running_external": "Active (external sensor)"
+        }
+      },
+      "eco_ambient_temperature_internal": {
+        "name": "Ambient temperature (air conditioner)"
+      },
+      "eco_ambient_temperature_external": {
+        "name": "Ambient temperature (sensor)"
+      },
+      "current_ac_target_temperature": {
+        "name": "Target temperature (AC)"
+      }
+    },
+    "button": {
+      "display_lighting_on": {
+        "name": "Display lighting on"
+      },
+      "display_lighting_off": {
+        "name": "Display lighting off"
+      },
+      "filter_reminder_reset": {
+        "name": "Reset filter cleaning reminder"
+      }
+    },
+    "number": {
+      "target_temperature": {
+        "name": "Target temperature"
+      },
+      "eco_target_temperature": {
+        "name": "Eco target temperature"
+      },
+      "eco_margin": {
+        "name": "Eco margin"
+      },
+      "frost_target_temperature": {
+        "name": "Frost protection target"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Temperature control settings",
+        "description": "Optionally select an alternative room-temperature sensor for Eco and Frost Protection. Leave empty to use the air conditioner sensor.",
+        "data": {
+          "eco_temperature_sensor": "Alternative room-temperature sensor (Eco and Frost Protection)"
+        }
+      }
+    }
+  }
+}
